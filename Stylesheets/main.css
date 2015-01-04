@@ -1,0 +1,31 @@
+p {
+  font-family: "Titillium Web", sans-serif; }
+
+h1 {
+  color: #424242;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center; }
+
+h2 {
+  color: #424242;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center; }
+
+nav {
+  display: block;
+  position: fixed; }
+
+nav li a {
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+  color: black;
+  display: block; }
+
+nav ul {
+  list-style-type: none; }
+
+.pages {
+  margin: 0 auto;
+  width: 500px; }
+
+/*# sourceMappingURL=main.css.map */
