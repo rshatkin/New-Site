@@ -10,7 +10,15 @@ body {
   // background-size: 100%;
 }
 
+.bkr-img{
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+}
+
 p {
+  background-color: rgba(255, 255, 255, .75);
+  padding: 25px;
   font-family: $copy-font;
 }
 

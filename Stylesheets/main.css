@@ -1,4 +1,11 @@
+.bkr-img {
+  position: fixed;
+  z-index: -100;
+  width: 100%; }
+
 p {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 25px;
   font-family: "Titillium Web", sans-serif; }
 
 h1 {
