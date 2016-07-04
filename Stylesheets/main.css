@@ -1,6 +1,45 @@
 body {
   background-image: url("../img/background-lite.png"); }
 
+.pinwheel {
+  width: 20px;
+  height: 20px;
+  margin: 20% auto;
+  position: relative;
+  background: radial-gradient(ellipse at center, #f5f6f8 0%, #9ba3af 100%);
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.3);
+  transform: rotate(45deg); }
+  .pinwheel .flap {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    position: absolute;
+    left: 50%;
+    transform-origin: left bottom; }
+    .pinwheel .flap:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 10px 2.5px 0 0;
+      border-color: rgba(0, 0, 0, 0.1) transparent transparent transparent; }
+    .pinwheel .flap:nth-of-type(4) {
+      border-color: #f1c40f transparent transparent transparent;
+      transform: rotate(405deg) scale(1.4); }
+    .pinwheel .flap:nth-of-type(3) {
+      border-color: #e74c3c transparent transparent transparent;
+      transform: rotate(315deg) scale(1.4); }
+    .pinwheel .flap:nth-of-type(2) {
+      border-color: #2ecc71 transparent transparent transparent;
+      transform: rotate(225deg) scale(1.4); }
+    .pinwheel .flap:nth-of-type(1) {
+      border-color: #3498db transparent transparent transparent;
+      transform: rotate(135deg) scale(1.4); }
+
 .pages {
   margin: 0 auto;
   width: 500px; }

@@ -1,12 +1,77 @@
+$square: 20px;
+$color1: #bcc2cb;
+$color2: #656f7f;
+
 $main-font: 'Titillium Web', sans-serif;
 $copy-font: 'Titillium Web', sans-serif;
 $primary-color: #424242;
 $section-color: #f2f2f2;
 
+$square: 100px;
+$color1: #bcc2cb;
+$color2: #656f7f;
+
 body {
   background-image: url("../img/background-lite.png");
 }
 
+.pinwheel {
+  width: 20px;
+  height: 20px;
+  margin: 20% auto;
+  position: relative;
+  background: radial-gradient(ellipse at center, #f5f6f8 0%, #9ba3af 100%);
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.3);
+  transform: rotate(45deg);
+  // animation: rot 3s linear infinite;
+  
+  .flap {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    position: absolute;
+    left: 50%;
+    transform-origin: left bottom;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 10px 2.5px 0 0;
+      border-color: rgba(0, 0, 0, 0.1) transparent transparent transparent;
+    }
+    &:nth-of-type(4) {
+      border-color: #f1c40f transparent transparent transparent;
+      transform: rotate(405deg) scale(1.4);
+    }
+    &:nth-of-type(3) {
+      border-color: #e74c3c transparent transparent transparent;
+      transform: rotate(315deg) scale(1.4);
+    }
+    &:nth-of-type(2) {
+      border-color: #2ecc71 transparent transparent transparent;
+      transform: rotate(225deg) scale(1.4);
+    }
+    &:nth-of-type(1) {
+      border-color: #3498db transparent transparent transparent;
+      transform: rotate(135deg) scale(1.4);
+    }
+  }
+}
+
+// @keyframes rot {
+//   from {
+//     transform: rotate(0deg);
+//   }
+
+//   to {
+//     transform: rotate(-360deg);
+//   }
+// }
 
 
 .pages {
